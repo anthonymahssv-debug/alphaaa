@@ -1,20 +1,33 @@
 from __future__ import annotations
 
 import json
+import logging
+import os
 import sqlite3
 from pathlib import Path
 from typing import Any, Dict, List, Optional
 from datetime import datetime, timezone
 
-ROOT = Path(__file__).resolve().parents[1]
-FRONTEND_DIR = ROOT / "frontend"
-DATA_JSON = FRONTEND_DIR / "data.json"
-DB_PATH = ROOT / "santa_fe_ci.db"
+logger = logging.getLogger(__name__)
+
+PROJECT_ROOT = Path(__file__).resolve().parent
+FRONTEND_DIR = Path(os.environ.get("FRONTEND_DIR", PROJECT_ROOT)).resolve()
+DATA_JSON = Path(os.environ.get("SEED_JSON_PATH", PROJECT_ROOT / "data.json")).resolve()
+DB_PATH = Path(os.environ.get("SQLITE_DB_PATH", PROJECT_ROOT / "santa_fe_ci.db")).resolve()
+OFFLINE_PAYLOAD: Dict[str, Any] = {
+    "mode": "offline",
+    "buildings": {},
+    "tower_summary": {},
+    "market_summary": {},
+    "events": [],
+    "listings": [],
+}
 
 def utcnow_iso() -> str:
     return datetime.now(timezone.utc).isoformat()
 
 def connect() -> sqlite3.Connection:
+    DB_PATH.parent.mkdir(parents=True, exist_ok=True)
     conn = sqlite3.connect(DB_PATH)
     conn.row_factory = sqlite3.Row
     return conn
@@ -48,9 +61,14 @@ def init_db() -> None:
         conn.commit()
 
 def read_seed_json() -> Dict[str, Any]:
-    if not DATA_JSON.exists():
-        return {"mode": "offline", "buildings": {}, "tower_summary": {}, "market_summary": {}, "events": [], "listings": []}
-    return json.loads(DATA_JSON.read_text(encoding="utf-8"))
+    if not DATA_JSON.is_file():
+        logger.error("Seed JSON file not found at %s. Using offline payload.", DATA_JSON)
+        return dict(OFFLINE_PAYLOAD)
+    try:
+        return json.loads(DATA_JSON.read_text(encoding="utf-8"))
+    except json.JSONDecodeError as exc:
+        logger.error("Seed JSON parse failure at %s: %s. Using offline payload.", DATA_JSON, exc)
+        return dict(OFFLINE_PAYLOAD)
 
 def seed_from_json(force: bool = False) -> Dict[str, Any]:
     init_db()
