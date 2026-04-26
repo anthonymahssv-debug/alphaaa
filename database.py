@@ -23,6 +23,11 @@ OFFLINE_PAYLOAD: Dict[str, Any] = {
     "listings": [],
 }
 
+def offline_payload(reason: str) -> Dict[str, Any]:
+    payload = dict(OFFLINE_PAYLOAD)
+    payload["seed_error"] = reason
+    return payload
+
 def utcnow_iso() -> str:
     return datetime.now(timezone.utc).isoformat()
 
@@ -62,13 +67,15 @@ def init_db() -> None:
 
 def read_seed_json() -> Dict[str, Any]:
     if not DATA_JSON.is_file():
-        logger.error("Seed JSON file not found at %s. Using offline payload.", DATA_JSON)
-        return dict(OFFLINE_PAYLOAD)
+        reason = f"seed JSON not found: {DATA_JSON}"
+        logger.error("%s. Using offline payload.", reason)
+        return offline_payload(reason)
     try:
         return json.loads(DATA_JSON.read_text(encoding="utf-8"))
-    except json.JSONDecodeError as exc:
-        logger.error("Seed JSON parse failure at %s: %s. Using offline payload.", DATA_JSON, exc)
-        return dict(OFFLINE_PAYLOAD)
+    except (json.JSONDecodeError, OSError) as exc:
+        reason = f"seed JSON read/parse failure at {DATA_JSON}: {exc}"
+        logger.error("%s. Using offline payload.", reason)
+        return offline_payload(reason)
 
 def seed_from_json(force: bool = False) -> Dict[str, Any]:
     init_db()
