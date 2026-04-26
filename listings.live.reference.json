@@ -1,0 +1,886 @@
+{
+  "generated_at": "2026-03-22T20:58:42+00:00",
+  "generated_at_label": "22 Mar 2026 · 20:58",
+  "buildings": {
+    "peninsula": {
+      "name": "Península Tower",
+      "short": "Península",
+      "color": "#3b82f6",
+      "colorLight": "#60a5fa",
+      "img": "img/peninsula.webp",
+      "lat": 19.35659,
+      "lng": -99.2745,
+      "address": "Av. Santa Fe 546, Contadero, Cuajimalpa",
+      "floors": 51,
+      "height": "164 m",
+      "note": "Arq. Teodoro González de León"
+    },
+    "torre300": {
+      "name": "Torre 300",
+      "short": "Torre 300",
+      "color": "#f59e0b",
+      "colorLight": "#fbbf24",
+      "img": "img/torre300.webp",
+      "lat": 19.35657,
+      "lng": -99.27475,
+      "address": "Av. Santa Fe 546-1, Contadero, Cuajimalpa",
+      "floors": 51,
+      "height": "175 m",
+      "note": "Arq. Teodoro González de León"
+    },
+    "paradox": {
+      "name": "Paradox",
+      "short": "Paradox",
+      "color": "#10b981",
+      "colorLight": "#34d399",
+      "img": "img/paradox.webp",
+      "lat": 19.3564,
+      "lng": -99.2747,
+      "address": "Av. Santa Fe 546, Torre C, Contadero",
+      "floors": 40,
+      "height": "~120 m",
+      "note": "Frente al Parque La Mexicana"
+    }
+  },
+  "listings": [
+    {
+      "id": "p1",
+      "building": "peninsula",
+      "beds": 2,
+      "baths": 2,
+      "parking": 2,
+      "sqm": 115,
+      "floor": "Piso alto · vista La Mexicana",
+      "price": 55000,
+      "furnished": true,
+      "title": "Depto. amueblado 2 rec. · piso alto",
+      "description": "Departamento amueblado en Península Tower con vista directa al Parque La Mexicana. Sala y comedor integrados, cocina italiana equipada, balcón perimetral. Acabados minimalistas de lujo.",
+      "amenities": [
+        "Alberca",
+        "Gimnasio",
+        "Spa",
+        "Sauna",
+        "Vapor",
+        "Roof Garden",
+        "Cine",
+        "Business Center",
+        "Seguridad 24h"
+      ],
+      "source": "https://www.inmuebles24.com/departamentos-en-renta-q-peninsula-santa-fe-cuajimalpa.html",
+      "history": [
+        {
+          "date": "2026-03-22",
+          "price": 55000
+        }
+      ],
+      "agent": {
+        "name": "Pendiente",
+        "company": "Pendiente",
+        "grade": "B",
+        "responseHours": 6,
+        "ghostIncidents": 0,
+        "note": "Dato por completar desde scraper real."
+      },
+      "verification": {
+        "sourceCount": 1,
+        "ownerProof": false,
+        "timestampedVideo": false,
+        "ghostFlags": 0,
+        "confidenceBoost": 0
+      },
+      "listedAt": "2026-02-20",
+      "metrics": {
+        "daysOnMarket": 30,
+        "priceCuts": 0,
+        "peakPrice": 55000,
+        "benchmarkPrice": 55000,
+        "priceAdvantagePct": 0,
+        "dealScore": 6,
+        "leverageScore": 6,
+        "ghostRisk": "Bajo",
+        "openingOffer": 50600,
+        "targetClose": 52800,
+        "walkAway": 55000
+      }
+    },
+    {
+      "id": "p2",
+      "building": "peninsula",
+      "beds": 2,
+      "baths": 2,
+      "parking": 1,
+      "sqm": 110,
+      "floor": "Piso medio-alto · vistas ciudad",
+      "price": 60000,
+      "furnished": false,
+      "title": "Depto. sin amueblar 2 rec.",
+      "description": "Amplio departamento en Península Tower sin amueblar. Excelente distribución con ventanas piso a techo, vistas a la ciudad y al Parque La Mexicana. Ideal para personalizar a su gusto.",
+      "amenities": [
+        "Alberca",
+        "Gimnasio",
+        "Spa",
+        "Roof Garden",
+        "Business Center",
+        "Seguridad 24h",
+        "Elevador"
+      ],
+      "source": "https://www.facebook.com",
+      "history": [
+        {
+          "date": "2026-03-22",
+          "price": 60000
+        }
+      ],
+      "agent": {
+        "name": "Pendiente",
+        "company": "Pendiente",
+        "grade": "B",
+        "responseHours": 6,
+        "ghostIncidents": 0,
+        "note": "Dato por completar desde scraper real."
+      },
+      "verification": {
+        "sourceCount": 1,
+        "ownerProof": false,
+        "timestampedVideo": false,
+        "ghostFlags": 0,
+        "confidenceBoost": 0
+      },
+      "listedAt": "2026-02-20",
+      "metrics": {
+        "daysOnMarket": 30,
+        "priceCuts": 0,
+        "peakPrice": 60000,
+        "benchmarkPrice": 60000,
+        "priceAdvantagePct": 0,
+        "dealScore": 6,
+        "leverageScore": 6,
+        "ghostRisk": "Bajo",
+        "openingOffer": 55200,
+        "targetClose": 57600,
+        "walkAway": 60000
+      }
+    },
+    {
+      "id": "p3",
+      "building": "peninsula",
+      "beds": 2,
+      "baths": 2,
+      "parking": 1,
+      "sqm": 117,
+      "floor": "Piso alto · balcón perimetral",
+      "price": 82000,
+      "furnished": true,
+      "title": "Depto. amueblado 2 rec. premium",
+      "description": "Departamento de lujo totalmente amueblado. Piso alto con vista directa al Parque La Mexicana. Balcón que rodea todo el departamento, closet de lavado, refrigerador, HDTV 50″, A/C y calefacción incluidos.",
+      "amenities": [
+        "Alberca",
+        "Gimnasio",
+        "Spa",
+        "Sauna",
+        "Vapor",
+        "Roof Garden",
+        "Cine",
+        "Business Center",
+        "Lounge",
+        "Seguridad 24h"
+      ],
+      "source": "https://www.micasapropia.org/property/renta-departamento-en-peninsula-tower-amueblado",
+      "history": [
+        {
+          "date": "2026-03-22",
+          "price": 82000
+        }
+      ],
+      "agent": {
+        "name": "Pendiente",
+        "company": "Pendiente",
+        "grade": "B",
+        "responseHours": 6,
+        "ghostIncidents": 0,
+        "note": "Dato por completar desde scraper real."
+      },
+      "verification": {
+        "sourceCount": 1,
+        "ownerProof": false,
+        "timestampedVideo": false,
+        "ghostFlags": 0,
+        "confidenceBoost": 0
+      },
+      "listedAt": "2026-02-20",
+      "metrics": {
+        "daysOnMarket": 30,
+        "priceCuts": 0,
+        "peakPrice": 82000,
+        "benchmarkPrice": 82000,
+        "priceAdvantagePct": 0,
+        "dealScore": 6,
+        "leverageScore": 6,
+        "ghostRisk": "Bajo",
+        "openingOffer": 75440,
+        "targetClose": 78720,
+        "walkAway": 82000
+      }
+    },
+    {
+      "id": "p4",
+      "building": "peninsula",
+      "beds": 2,
+      "baths": 2,
+      "parking": 1,
+      "sqm": 108,
+      "floor": "Piso medio · acceso directo parque",
+      "price": 45000,
+      "furnished": false,
+      "title": "Depto. sin amueblar 2 rec. · precio competitivo",
+      "description": "Departamento en Península Tower sin amueblar. Luminoso, buena distribución. Acceso directo al Parque La Mexicana a 100 metros. Ideal para ejecutivos o parejas.",
+      "amenities": [
+        "Alberca",
+        "Gimnasio",
+        "Spa",
+        "Roof Garden",
+        "Seguridad 24h"
+      ],
+      "source": "https://www.pincali.com",
+      "history": [
+        {
+          "date": "2026-03-22",
+          "price": 45000
+        }
+      ],
+      "agent": {
+        "name": "Pendiente",
+        "company": "Pendiente",
+        "grade": "B",
+        "responseHours": 6,
+        "ghostIncidents": 0,
+        "note": "Dato por completar desde scraper real."
+      },
+      "verification": {
+        "sourceCount": 1,
+        "ownerProof": false,
+        "timestampedVideo": false,
+        "ghostFlags": 0,
+        "confidenceBoost": 0
+      },
+      "listedAt": "2026-02-20",
+      "metrics": {
+        "daysOnMarket": 30,
+        "priceCuts": 0,
+        "peakPrice": 45000,
+        "benchmarkPrice": 45000,
+        "priceAdvantagePct": 0,
+        "dealScore": 6,
+        "leverageScore": 6,
+        "ghostRisk": "Bajo",
+        "openingOffer": 41400,
+        "targetClose": 43200,
+        "walkAway": 45000
+      }
+    },
+    {
+      "id": "p5",
+      "building": "peninsula",
+      "beds": 3,
+      "baths": 3,
+      "parking": 2,
+      "sqm": 165,
+      "floor": "Piso muy alto · vistas panorámicas",
+      "price": 95000,
+      "furnished": true,
+      "title": "Depto. amueblado 3 rec. · vista total",
+      "description": "Espectacular departamento de 3 recámaras con vista panorámica a la ciudad y al Parque La Mexicana. Totalmente amueblado con acabados de alta gama, terraza perimetral y cocina equipada de lujo.",
+      "amenities": [
+        "Alberca",
+        "Gimnasio",
+        "Spa",
+        "Sauna",
+        "Vapor",
+        "Roof Garden",
+        "Cine",
+        "Business Center",
+        "Salón Eventos",
+        "Seguridad 24h"
+      ],
+      "source": "https://www.inmuebles24.com/departamentos-en-renta-q-peninsula-santa-fe-cuajimalpa.html",
+      "history": [
+        {
+          "date": "2026-03-22",
+          "price": 95000
+        }
+      ],
+      "agent": {
+        "name": "Pendiente",
+        "company": "Pendiente",
+        "grade": "B",
+        "responseHours": 6,
+        "ghostIncidents": 0,
+        "note": "Dato por completar desde scraper real."
+      },
+      "verification": {
+        "sourceCount": 1,
+        "ownerProof": false,
+        "timestampedVideo": false,
+        "ghostFlags": 0,
+        "confidenceBoost": 0
+      },
+      "listedAt": "2026-02-20",
+      "metrics": {
+        "daysOnMarket": 30,
+        "priceCuts": 0,
+        "peakPrice": 95000,
+        "benchmarkPrice": 95000,
+        "priceAdvantagePct": 0,
+        "dealScore": 6,
+        "leverageScore": 6,
+        "ghostRisk": "Bajo",
+        "openingOffer": 87400,
+        "targetClose": 91200,
+        "walkAway": 95000
+      }
+    },
+    {
+      "id": "t1",
+      "building": "torre300",
+      "beds": 2,
+      "baths": 2,
+      "parking": 2,
+      "sqm": 122,
+      "floor": "Piso alto · vista La Mexicana",
+      "price": 40000,
+      "furnished": false,
+      "title": "Depto. 2 rec. · cocina italiana",
+      "description": "Departamento en Torre 300 con cocina italiana y acabados de lujo. Increíble vista al Parque La Mexicana. Medio baño adicional para visitas. Cuarto de lavado independiente.",
+      "amenities": [
+        "Alberca",
+        "Business Center",
+        "Gimnasio",
+        "Sala Cine",
+        "Sala Juntas",
+        "Salón Sky",
+        "Lounge",
+        "Sauna",
+        "Spa"
+      ],
+      "source": "https://pulppo.com/propiedades/departamento-contadero-cuajimalpa-de-morelos-ciudad-de-mexico-2-122m2-renta-mxn-40000-65b96f87528c432e3bb653d6",
+      "history": [
+        {
+          "date": "2026-03-22",
+          "price": 40000
+        }
+      ],
+      "agent": {
+        "name": "Pendiente",
+        "company": "Pendiente",
+        "grade": "B",
+        "responseHours": 6,
+        "ghostIncidents": 0,
+        "note": "Dato por completar desde scraper real."
+      },
+      "verification": {
+        "sourceCount": 1,
+        "ownerProof": false,
+        "timestampedVideo": false,
+        "ghostFlags": 0,
+        "confidenceBoost": 0
+      },
+      "listedAt": "2026-02-20",
+      "metrics": {
+        "daysOnMarket": 30,
+        "priceCuts": 0,
+        "peakPrice": 40000,
+        "benchmarkPrice": 40000,
+        "priceAdvantagePct": 0,
+        "dealScore": 6,
+        "leverageScore": 6,
+        "ghostRisk": "Bajo",
+        "openingOffer": 36800,
+        "targetClose": 38400,
+        "walkAway": 40000
+      }
+    },
+    {
+      "id": "t2",
+      "building": "torre300",
+      "beds": 3,
+      "baths": 3,
+      "parking": 2,
+      "sqm": 160,
+      "floor": "Piso alto · escriturado",
+      "price": 65000,
+      "furnished": false,
+      "title": "Depto. 3 rec. · escriturado",
+      "description": "Departamento escriturado en Torre 300. 3 recámaras con baños completos, baño de visitas, sala, comedor y cocina abierta. Una de las torres más exclusivas de Av. Santa Fe.",
+      "amenities": [
+        "Alberca",
+        "Business Center",
+        "Gimnasio",
+        "Sala Cine",
+        "Lounge",
+        "Sauna",
+        "Spa",
+        "Salón Fiestas",
+        "Seguridad 24h"
+      ],
+      "source": "https://www.jmgrouprealestate.com/property/renta-departamento-torre-300-avenida-santa-fe",
+      "history": [
+        {
+          "date": "2026-03-22",
+          "price": 65000
+        }
+      ],
+      "agent": {
+        "name": "Pendiente",
+        "company": "Pendiente",
+        "grade": "B",
+        "responseHours": 6,
+        "ghostIncidents": 0,
+        "note": "Dato por completar desde scraper real."
+      },
+      "verification": {
+        "sourceCount": 1,
+        "ownerProof": false,
+        "timestampedVideo": false,
+        "ghostFlags": 0,
+        "confidenceBoost": 0
+      },
+      "listedAt": "2026-02-20",
+      "metrics": {
+        "daysOnMarket": 30,
+        "priceCuts": 0,
+        "peakPrice": 65000,
+        "benchmarkPrice": 65000,
+        "priceAdvantagePct": 0,
+        "dealScore": 6,
+        "leverageScore": 6,
+        "ghostRisk": "Bajo",
+        "openingOffer": 59800,
+        "targetClose": 62400,
+        "walkAway": 65000
+      }
+    },
+    {
+      "id": "t3",
+      "building": "torre300",
+      "beds": 2,
+      "baths": 2,
+      "parking": 1,
+      "sqm": 118,
+      "floor": "Piso alto · vistas únicas parque",
+      "price": 50000,
+      "furnished": true,
+      "title": "Depto. amueblado 2 rec. · vista parque",
+      "description": "Espectacular departamento amueblado en Torre 300 con vistas únicas al Parque La Mexicana. Diseñado por Arq. Teodoro González de León. Impresionante lobby y acceso por Paseo de los Arquitectos.",
+      "amenities": [
+        "Alberca",
+        "Gimnasio",
+        "Spa",
+        "Business Center",
+        "Cine",
+        "Lounge",
+        "Sauna",
+        "Salón Sky",
+        "Seguridad 24h"
+      ],
+      "source": "https://www.inmuebles24.com",
+      "history": [
+        {
+          "date": "2026-03-22",
+          "price": 50000
+        }
+      ],
+      "agent": {
+        "name": "Pendiente",
+        "company": "Pendiente",
+        "grade": "B",
+        "responseHours": 6,
+        "ghostIncidents": 0,
+        "note": "Dato por completar desde scraper real."
+      },
+      "verification": {
+        "sourceCount": 1,
+        "ownerProof": false,
+        "timestampedVideo": false,
+        "ghostFlags": 0,
+        "confidenceBoost": 0
+      },
+      "listedAt": "2026-02-20",
+      "metrics": {
+        "daysOnMarket": 30,
+        "priceCuts": 0,
+        "peakPrice": 50000,
+        "benchmarkPrice": 50000,
+        "priceAdvantagePct": 0,
+        "dealScore": 6,
+        "leverageScore": 6,
+        "ghostRisk": "Bajo",
+        "openingOffer": 46000,
+        "targetClose": 48000,
+        "walkAway": 50000
+      }
+    },
+    {
+      "id": "t4",
+      "building": "torre300",
+      "beds": 2,
+      "baths": 2,
+      "parking": 1,
+      "sqm": 112,
+      "floor": "Piso medio · precio accesible",
+      "price": 16000,
+      "furnished": false,
+      "title": "Depto. 2 rec. · mejor precio Torre 300",
+      "description": "Departamento en Torre 300, piso medio. Precio muy competitivo. Excelente distribución, cocina abierta, sala-comedor. Ideal para quienes buscan vivir en Santa Fe con presupuesto ajustado.",
+      "amenities": [
+        "Alberca",
+        "Gimnasio",
+        "Business Center",
+        "Lounge",
+        "Seguridad 24h"
+      ],
+      "source": "https://casas.trovit.com.mx/renta-departamento-santa-fe-torre-300",
+      "history": [
+        {
+          "date": "2026-03-22",
+          "price": 16000
+        }
+      ],
+      "agent": {
+        "name": "Pendiente",
+        "company": "Pendiente",
+        "grade": "B",
+        "responseHours": 6,
+        "ghostIncidents": 0,
+        "note": "Dato por completar desde scraper real."
+      },
+      "verification": {
+        "sourceCount": 1,
+        "ownerProof": false,
+        "timestampedVideo": false,
+        "ghostFlags": 0,
+        "confidenceBoost": 0
+      },
+      "listedAt": "2026-02-20",
+      "metrics": {
+        "daysOnMarket": 30,
+        "priceCuts": 0,
+        "peakPrice": 16000,
+        "benchmarkPrice": 16000,
+        "priceAdvantagePct": 0,
+        "dealScore": 6,
+        "leverageScore": 6,
+        "ghostRisk": "Bajo",
+        "openingOffer": 14720,
+        "targetClose": 15360,
+        "walkAway": 16000
+      }
+    },
+    {
+      "id": "t5",
+      "building": "torre300",
+      "beds": 3,
+      "baths": 3,
+      "parking": 2,
+      "sqm": 175,
+      "floor": "Piso muy alto · vistas panorámicas",
+      "price": 80000,
+      "furnished": false,
+      "title": "Depto. 3 rec. · acabados premium",
+      "description": "Gran departamento de 3 recámaras con acabados premium en Torre 300. Cocina italiana de lujo, cuarto de servicio, bodega. Vistas panorámicas al Parque La Mexicana y corporativos de Santa Fe.",
+      "amenities": [
+        "Alberca",
+        "Business Center",
+        "Gimnasio",
+        "Sala Cine",
+        "Sala Juntas",
+        "Salón Sky",
+        "Lounge",
+        "Sauna",
+        "Spa",
+        "Seguridad 24h"
+      ],
+      "source": "https://www.inmuebles24.com",
+      "history": [
+        {
+          "date": "2026-03-22",
+          "price": 80000
+        }
+      ],
+      "agent": {
+        "name": "Pendiente",
+        "company": "Pendiente",
+        "grade": "B",
+        "responseHours": 6,
+        "ghostIncidents": 0,
+        "note": "Dato por completar desde scraper real."
+      },
+      "verification": {
+        "sourceCount": 1,
+        "ownerProof": false,
+        "timestampedVideo": false,
+        "ghostFlags": 0,
+        "confidenceBoost": 0
+      },
+      "listedAt": "2026-02-20",
+      "metrics": {
+        "daysOnMarket": 30,
+        "priceCuts": 0,
+        "peakPrice": 80000,
+        "benchmarkPrice": 80000,
+        "priceAdvantagePct": 0,
+        "dealScore": 6,
+        "leverageScore": 6,
+        "ghostRisk": "Bajo",
+        "openingOffer": 73600,
+        "targetClose": 76800,
+        "walkAway": 80000
+      }
+    },
+    {
+      "id": "x1",
+      "building": "paradox",
+      "beds": 2,
+      "baths": 2,
+      "parking": 1,
+      "sqm": 104,
+      "floor": "Piso 10 · vista La Mexicana",
+      "price": 45000,
+      "furnished": true,
+      "title": "Depto. amueblado 2 rec. · piso 10",
+      "description": "Departamento amueblado y equipado en Torre Paradox, piso 10 con vista al Parque La Mexicana. Studio adaptable como cuarto extra. Cocina abierta con lavadora y secadora incluidas.",
+      "amenities": [
+        "Alberca Lujo",
+        "Gimnasio",
+        "Sala Eventos",
+        "Salón Adultos",
+        "Spa Masajes",
+        "Sauna",
+        "Vapor",
+        "Salón Belleza",
+        "Sala Cine",
+        "Business Center",
+        "Vigilancia 24h"
+      ],
+      "source": "https://www.properstar.com/listing/88227884",
+      "history": [
+        {
+          "date": "2026-03-22",
+          "price": 45000
+        }
+      ],
+      "agent": {
+        "name": "Pendiente",
+        "company": "Pendiente",
+        "grade": "B",
+        "responseHours": 6,
+        "ghostIncidents": 0,
+        "note": "Dato por completar desde scraper real."
+      },
+      "verification": {
+        "sourceCount": 1,
+        "ownerProof": false,
+        "timestampedVideo": false,
+        "ghostFlags": 0,
+        "confidenceBoost": 0
+      },
+      "listedAt": "2026-02-20",
+      "metrics": {
+        "daysOnMarket": 30,
+        "priceCuts": 0,
+        "peakPrice": 45000,
+        "benchmarkPrice": 45000,
+        "priceAdvantagePct": 0,
+        "dealScore": 6,
+        "leverageScore": 6,
+        "ghostRisk": "Bajo",
+        "openingOffer": 41400,
+        "targetClose": 43200,
+        "walkAway": 45000
+      }
+    },
+    {
+      "id": "x2",
+      "building": "paradox",
+      "beds": 2,
+      "baths": 2,
+      "parking": 1,
+      "sqm": 98,
+      "floor": "Piso medio-alto · pisos madera",
+      "price": 38000,
+      "furnished": false,
+      "title": "Depto. 2 rec. · pisos de madera",
+      "description": "Departamento en Torre Paradox con pisos de madera, vista a La Mexicana y a la ciudad. 2 recámaras, 2 baños, 1 estacionamiento. Acabados de alta calidad.",
+      "amenities": [
+        "Alberca",
+        "Gimnasio",
+        "Spa",
+        "Sauna",
+        "Business Center",
+        "Sala Cine",
+        "Seguridad 24h"
+      ],
+      "source": "https://www.pincali.com/inmueble/depto-renta-en-av-santa-fe-torre-paradox-santa-fe",
+      "history": [
+        {
+          "date": "2026-03-22",
+          "price": 38000
+        }
+      ],
+      "agent": {
+        "name": "Pendiente",
+        "company": "Pendiente",
+        "grade": "B",
+        "responseHours": 6,
+        "ghostIncidents": 0,
+        "note": "Dato por completar desde scraper real."
+      },
+      "verification": {
+        "sourceCount": 1,
+        "ownerProof": false,
+        "timestampedVideo": false,
+        "ghostFlags": 0,
+        "confidenceBoost": 0
+      },
+      "listedAt": "2026-02-20",
+      "metrics": {
+        "daysOnMarket": 30,
+        "priceCuts": 0,
+        "peakPrice": 38000,
+        "benchmarkPrice": 38000,
+        "priceAdvantagePct": 0,
+        "dealScore": 6,
+        "leverageScore": 6,
+        "ghostRisk": "Bajo",
+        "openingOffer": 34960,
+        "targetClose": 36480,
+        "walkAway": 38000
+      }
+    },
+    {
+      "id": "x3",
+      "building": "paradox",
+      "beds": 2,
+      "baths": 2,
+      "parking": 2,
+      "sqm": 132,
+      "floor": "Piso alto · acabados lujo",
+      "price": 60000,
+      "furnished": true,
+      "title": "Depto. amueblado 2 rec. · lujo",
+      "description": "Departamento de lujo totalmente amueblado en Paradox Santa Fe. 132 m² con acabados de lujo y vista espectacular a Parque La Mexicana. Ideal para ejecutivos o parejas exigentes.",
+      "amenities": [
+        "Alberca Lujo",
+        "Gimnasio",
+        "Sala Eventos",
+        "Spa",
+        "Sauna",
+        "Vapor",
+        "Salón Belleza",
+        "Sala Cine",
+        "Business Center",
+        "Vigilancia 24h"
+      ],
+      "source": "https://www.instagram.com",
+      "history": [
+        {
+          "date": "2026-03-22",
+          "price": 60000
+        }
+      ],
+      "agent": {
+        "name": "Pendiente",
+        "company": "Pendiente",
+        "grade": "B",
+        "responseHours": 6,
+        "ghostIncidents": 0,
+        "note": "Dato por completar desde scraper real."
+      },
+      "verification": {
+        "sourceCount": 1,
+        "ownerProof": false,
+        "timestampedVideo": false,
+        "ghostFlags": 0,
+        "confidenceBoost": 0
+      },
+      "listedAt": "2026-02-20",
+      "metrics": {
+        "daysOnMarket": 30,
+        "priceCuts": 0,
+        "peakPrice": 60000,
+        "benchmarkPrice": 60000,
+        "priceAdvantagePct": 0,
+        "dealScore": 6,
+        "leverageScore": 6,
+        "ghostRisk": "Bajo",
+        "openingOffer": 55200,
+        "targetClose": 57600,
+        "walkAway": 60000
+      }
+    },
+    {
+      "id": "x4",
+      "building": "paradox",
+      "beds": 3,
+      "baths": 3,
+      "parking": 2,
+      "sqm": 148,
+      "floor": "Piso alto · vistas panorámicas",
+      "price": 75000,
+      "furnished": false,
+      "title": "Depto. 3 rec. · vista panorámica",
+      "description": "Amplio departamento de 3 recámaras en Paradox con vistas panorámicas. Sala, comedor, cocina abierta equipada, cuarto de lavado. Acceso exclusivo a todas las amenidades del edificio.",
+      "amenities": [
+        "Alberca Lujo",
+        "Gimnasio",
+        "Sala Eventos",
+        "Salón Adultos",
+        "Spa",
+        "Sauna",
+        "Vapor",
+        "Salón Belleza",
+        "Sala Cine",
+        "Business Center",
+        "Vigilancia 24h"
+      ],
+      "source": "https://www.properstar.com/listing/88227884",
+      "history": [
+        {
+          "date": "2026-03-22",
+          "price": 75000
+        }
+      ],
+      "agent": {
+        "name": "Pendiente",
+        "company": "Pendiente",
+        "grade": "B",
+        "responseHours": 6,
+        "ghostIncidents": 0,
+        "note": "Dato por completar desde scraper real."
+      },
+      "verification": {
+        "sourceCount": 1,
+        "ownerProof": false,
+        "timestampedVideo": false,
+        "ghostFlags": 0,
+        "confidenceBoost": 0
+      },
+      "listedAt": "2026-02-20",
+      "metrics": {
+        "daysOnMarket": 30,
+        "priceCuts": 0,
+        "peakPrice": 75000,
+        "benchmarkPrice": 75000,
+        "priceAdvantagePct": 0,
+        "dealScore": 6,
+        "leverageScore": 6,
+        "ghostRisk": "Bajo",
+        "openingOffer": 69000,
+        "targetClose": 72000,
+        "walkAway": 75000
+      }
+    }
+  ],
+  "signature": "df27941a3ad5",
+  "mode": "live",
+  "notes": "Seed-based local feed. Replace seed loader with real portal collectors."
+}
