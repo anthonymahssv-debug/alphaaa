@@ -1,20 +1,38 @@
 from __future__ import annotations
 
 import json
+import logging
+import os
 import sqlite3
 from pathlib import Path
 from typing import Any, Dict, List, Optional
 from datetime import datetime, timezone
 
-ROOT = Path(__file__).resolve().parents[1]
-FRONTEND_DIR = ROOT / "frontend"
-DATA_JSON = FRONTEND_DIR / "data.json"
-DB_PATH = ROOT / "santa_fe_ci.db"
+logger = logging.getLogger(__name__)
+
+PROJECT_ROOT = Path(__file__).resolve().parent
+FRONTEND_DIR = Path(os.environ.get("FRONTEND_DIR", PROJECT_ROOT)).resolve()
+DATA_JSON = Path(os.environ.get("SEED_JSON_PATH", PROJECT_ROOT / "data.json")).resolve()
+DB_PATH = Path(os.environ.get("SQLITE_DB_PATH", PROJECT_ROOT / "santa_fe_ci.db")).resolve()
+OFFLINE_PAYLOAD: Dict[str, Any] = {
+    "mode": "offline",
+    "buildings": {},
+    "tower_summary": {},
+    "market_summary": {},
+    "events": [],
+    "listings": [],
+}
+
+def offline_payload(reason: str) -> Dict[str, Any]:
+    payload = dict(OFFLINE_PAYLOAD)
+    payload["seed_error"] = reason
+    return payload
 
 def utcnow_iso() -> str:
     return datetime.now(timezone.utc).isoformat()
 
 def connect() -> sqlite3.Connection:
+    DB_PATH.parent.mkdir(parents=True, exist_ok=True)
     conn = sqlite3.connect(DB_PATH)
     conn.row_factory = sqlite3.Row
     return conn
@@ -48,9 +66,27 @@ def init_db() -> None:
         conn.commit()
 
 def read_seed_json() -> Dict[str, Any]:
-    if not DATA_JSON.exists():
-        return {"mode": "offline", "buildings": {}, "tower_summary": {}, "market_summary": {}, "events": [], "listings": []}
-    return json.loads(DATA_JSON.read_text(encoding="utf-8"))
+    if not DATA_JSON.is_file():
+        reason = f"seed JSON not found: {DATA_JSON}"
+        logger.error("%s. Using offline payload.", reason)
+        return offline_payload(reason)
+    try:
+        parsed = json.loads(DATA_JSON.read_text(encoding="utf-8"))
+        if not isinstance(parsed, dict):
+            reason = f"seed JSON must be an object at {DATA_JSON}"
+            logger.error("%s. Using offline payload.", reason)
+            return offline_payload(reason)
+        required_top_level = ("buildings", "listings", "tower_summary", "market_summary", "events")
+        missing = [key for key in required_top_level if key not in parsed]
+        if missing:
+            reason = f"seed JSON missing required keys {missing} at {DATA_JSON}"
+            logger.error("%s. Using offline payload.", reason)
+            return offline_payload(reason)
+        return parsed
+    except (json.JSONDecodeError, OSError) as exc:
+        reason = f"seed JSON read/parse failure at {DATA_JSON}: {exc}"
+        logger.error("%s. Using offline payload.", reason)
+        return offline_payload(reason)
 
 def seed_from_json(force: bool = False) -> Dict[str, Any]:
     init_db()
